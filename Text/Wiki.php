@@ -480,7 +480,7 @@ class Text_Wiki
      *    {@see Text_Wiki::singleton} for a list of rules
      * @return Text_Wiki a Parser object extended from Text_Wiki
      */
-    public function factory($parser = 'Default', $rules = null)
+    public static function factory($parser = 'Default', $rules = null)
     {
         $class = 'Text_Wiki_' . $parser;
         $file = str_replace('_', '/', $class).'.php';
