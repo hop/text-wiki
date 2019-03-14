@@ -456,7 +456,7 @@ class Text_Wiki
     *    in further calls it will be effectively ignored.
     * @return &object a reference to the Text_Wiki unique instantiation.
     */
-    public function &singleton($parser = 'Default', $rules = null)
+    public static function &singleton($parser = 'Default', $rules = null)
     {
         static $only = array();
         if (!isset($only[$parser])) {
